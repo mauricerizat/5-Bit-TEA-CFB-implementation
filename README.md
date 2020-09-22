@@ -9,7 +9,7 @@ THIS README DEMONSTRATES THE EXECUTION OF THIS PROGRAM ON A LINUX TERMINAL WITH 
 
 This program is designed to encrypt/decrypt 7-bit ASCII characters. The use of non ASCII characters may cause undefined behaviour during the runtime of the program. 
 
-K is a hardcoded global constant, therefore to change the bit value of the CFB program, the value of GLOBAL_CONST_K must be changed from the Task5.h file and the program must be recompiled.
+K is a hardcoded global constant (default value 5), therefore to change the bit value of the CFB program, the value of GLOBAL_CONST_K must be changed from the header.h file and the program must be recompiled.
 
 ## FILE IO 
 
@@ -42,6 +42,10 @@ Enter the following command into the terminal to remove all objects and .out fil
 ## NOTES
 This program outputs ciphertext as a bitstream which works fine for encryption and decryption.
 
-However it would be preferrable to output ciphertext as a hexadecimal string and there is some coode in the source for this, albeit commented out. The reason for this is that the binary to hexadecimal string conversion produces some errors, primarily in the last few characters (bytes). I will have to deal with this when I get the chance. 
+However it would be preferrable to output ciphertext as a hexadecimal string and there is some code in the source for this, albeit commented out. 
+
+The reason for this not being used is that the binary to hexadecimal string conversion produces some errors, primarily in the last few characters (bytes). 
+
+I will have to deal with this when I get the chance. 
 
 Contact me at mauricerizat@gmail.com to report bugs
