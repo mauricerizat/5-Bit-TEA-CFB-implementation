@@ -39,4 +39,9 @@ Enter the following command into the terminal to remove all objects and .out fil
 
 **make clean**
 
+## NOTES
+This program outputs ciphertext as a bitstream which works fine for encryption and decryption.
+
+However it would be preferrable to output ciphertext as a hexadecimal string and there is some coode in the source for this, albeit commented out. The reason for this is that the binary to hexadecimal string conversion produces some errors, primarily in the last few characters (bytes). I will have to deal with this when I get the chance. 
+
 Contact me at mauricerizat@gmail.com to report bugs
